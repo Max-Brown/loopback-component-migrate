@@ -7,7 +7,8 @@
     "name": {
       "type": "String",
       "comments": "Name of the migration.",
-      "required": true
+      "required": true,
+      "index": true
     },
     "runDtTm": {
       "type": "Date",
@@ -16,9 +17,7 @@
     }
   },
   "indexes": {
-    "name_index": {
-      "name": 1
-    }
+    
   },
   "methods": {
     "migrateTo": {
